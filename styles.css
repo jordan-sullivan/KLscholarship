@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #000;
+  /* font-family: "Sofia", sans-serif; */
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+.center {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.outer {
+  background: #111;
+  margin: 0 50px;
+  position: relative;
+}
+.button {
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 50px;
+  height: 70px;
+  width: 220px;
+}
+.circle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.outer button,
+.outer span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outer button {
+  background: #020202;
+  color: #f2f2f2;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  z-index: 9;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button button {
+  height: 60px;
+  width: 210px;
+  border-radius: 40px;
+}
+
+.outer span {
+  height: 100%;
+  width: 100%;
+  background: inherit;
+}
+.button span {
+  border-radius: 50px;
+}
+
+.outer:hover span:nth-child(1) {
+  filter: blur(10px);
+}
+.outer:hover span:nth-child(2) {
+  filter: blur(40px);
+}
+/* pink-magenta-blue */
+.outer:hover {
+  background: linear-gradient(#aa3bff, #3bdeff, #ff3bf5);
+  /* animation: rotate 1.5s linear infinite; */
+  animation: rotate 3.5s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .center {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .outer {
+    margin: 50px 0;
+  }
+}
