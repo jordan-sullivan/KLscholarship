@@ -9,6 +9,7 @@ body {
   height: 100%;
   place-items: center;
   background: #000;
+  /* font-family: "Sofia", sans-serif; */
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
@@ -24,6 +25,8 @@ body {
   position: relative;
 }
 .button {
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   border-radius: 50px;
   height: 70px;
   width: 220px;
