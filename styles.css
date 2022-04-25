@@ -30,7 +30,9 @@ body {
 .button,
 .first-button,
 .second-button,
-.third-button {
+.third-button,
+.fourth-button,
+.fifth-button {
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
   border-radius: 50px;
