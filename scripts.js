@@ -1,10 +1,12 @@
 // - - - - - - - - - QUERY SELECTORS - - - - - - - - - - //
 const buttonViewPage = document.querySelector(".center");
 const button = document.querySelector(".button");
-const essayViewPage = document.querySelector(".essay-view-page");
+const essayOneViewPage = document.querySelector(".essay-one-view-page");
 const articleSection = document.querySelector(".article-section");
 const essay = document.querySelector(".essay");
 const footer = document.querySelector(".nav-buttons-footer");
+const secondButton = document.querySelector(".forward");
+const thirdButton = document.querySelector(".back");
 
 // - - - - - - - - - - EVENT LISTENERS - - - - - - - - - - //
 button.addEventListener("click", (e) => goToEssayOnePage());
@@ -17,7 +19,7 @@ button.addEventListener("click", (e) => goToEssayFivePage());
 
 const goToEssayOnePage = () => {
   hideElement([buttonViewPage]);
-  showElement([essayViewPage, articleSection]);
+  showElement([essayOneViewPage, articleSection]);
 };
 
 const goToEssayTwoPage = () => {

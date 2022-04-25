@@ -27,7 +27,8 @@ body {
   margin: 0 50px;
   position: relative;
 }
-.button {
+.button,
+.second-button {
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
   border-radius: 50px;
@@ -130,8 +131,7 @@ h1 {
   margin-right: 10%;
   display: flex;
   align-items: stretch;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: center;
 }
 
 /* - - - - - HIDDEN ELEMENTS - - - - -  */
