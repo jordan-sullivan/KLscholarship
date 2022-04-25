@@ -28,7 +28,9 @@ body {
   position: relative;
 }
 .button,
-.second-button {
+.first-button,
+.second-button,
+.third-button {
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
   border-radius: 50px;
@@ -110,6 +112,7 @@ h1 {
   font-size: 300%;
 }
 .article-section {
+  font-size: 130%;
   margin: 3%;
   padding: 5%;
   display: flex;
