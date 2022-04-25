@@ -1,3 +1,4 @@
+/* - - - - - GENERAL - - - - -  */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,8 @@ body {
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
+
+/* - - - - - BUTTON - - - - -  */
 .center {
   display: flex;
   text-align: center;
@@ -24,18 +27,19 @@ body {
   margin: 0 50px;
   position: relative;
 }
-.button {
+.button,
+.first-button,
+.second-button,
+.third-button,
+.fourth-button,
+.fifth-button {
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
   border-radius: 50px;
   height: 70px;
   width: 220px;
 }
-.circle {
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-}
+
 .outer button,
 .outer span {
   position: absolute;
@@ -59,7 +63,6 @@ body {
   width: 210px;
   border-radius: 40px;
 }
-
 .outer span {
   height: 100%;
   width: 100%;
@@ -68,7 +71,6 @@ body {
 .button span {
   border-radius: 50px;
 }
-
 .outer:hover span:nth-child(1) {
   filter: blur(10px);
 }
@@ -78,7 +80,6 @@ body {
 /* pink-magenta-blue */
 .outer:hover {
   background: linear-gradient(#aa3bff, #3bdeff, #ff3bf5);
-  /* animation: rotate 1.5s linear infinite; */
   animation: rotate 3.5s linear infinite;
 }
 @keyframes rotate {
@@ -89,7 +90,6 @@ body {
     filter: hue-rotate(360deg);
   }
 }
-
 @media (max-width: 640px) {
   .center {
     flex-wrap: wrap;
@@ -98,4 +98,48 @@ body {
   .outer {
     margin: 50px 0;
   }
+}
+
+/* - - - - - ESSAY PAGE - - - - -  */
+
+.header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 300%;
+}
+.article-section {
+  font-size: 130%;
+  margin: 3%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.essay {
+  color: #d3d3d3;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-buttons-footer {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* - - - - - HIDDEN ELEMENTS - - - - -  */
+.hidden {
+  display: none;
 }
